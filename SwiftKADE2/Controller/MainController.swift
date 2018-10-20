@@ -32,7 +32,15 @@ class MainController: UIViewController {
     }
     
     @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
-        
+        switch sender.selectedSegmentIndex
+        {
+        case 0:
+            eventPresenter.getEvents(view: self, service: EventService(), url: LAST_EVENT_URL)
+        case 1:
+            eventPresenter.getEvents(view: self, service: EventService(), url: NEXT_EVENT_URL)
+        default:
+            break
+        }
     }
 }
 

@@ -63,6 +63,7 @@
                 <outlet property="errorLabel" destination="zvX-1j-Zy9" id="XGM-9d-R0N"/>
                 <outlet property="eventTableView" destination="z61-2B-iMb" id="d42-Jo-zbl"/>
                 <outlet property="loadingIndicator" destination="kgN-X1-qzS" id="aAn-t4-ChD"/>
+                <outlet property="segmentedControl" destination="On4-HB-dVd" id="8SI-hO-Hxx"/>
             </connections>
             <point key="canvasLocation" x="39.5" y="54.5"/>
         </view>
