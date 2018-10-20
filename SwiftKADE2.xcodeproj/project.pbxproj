@@ -17,7 +17,7 @@
 		D749937C217B1F01006C20AE /* SwiftKADE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749937B217B1F01006C20AE /* SwiftKADE2Tests.swift */; };
 		D7499387217B1F01006C20AE /* SwiftKADE2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499386217B1F01006C20AE /* SwiftKADE2UITests.swift */; };
 		D7499396217B2339006C20AE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499394217B2339006C20AE /* MainController.swift */; };
-		D7499397217B2339006C20AE /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7499395217B2339006C20AE /* MainController.xib */; };
+		D7499397217B2339006C20AE /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7499395217B2339006C20AE /* MainView.xib */; };
 		D7499399217B2387006C20AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499398217B2387006C20AE /* MainView.swift */; };
 		D74993A1217B2762006C20AE /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749939F217B2762006C20AE /* EventCell.swift */; };
 		D74993A2217B2762006C20AE /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74993A0217B2762006C20AE /* EventCell.xib */; };
@@ -67,7 +67,7 @@
 		D7499386217B1F01006C20AE /* SwiftKADE2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKADE2UITests.swift; sourceTree = "<group>"; };
 		D7499388217B1F01006C20AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7499394217B2339006C20AE /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		D7499395217B2339006C20AE /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
+		D7499395217B2339006C20AE /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		D7499398217B2387006C20AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D749939F217B2762006C20AE /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		D74993A0217B2762006C20AE /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		D749939D217B23B6006C20AE /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				D7499395217B2339006C20AE /* MainController.xib */,
+				D7499395217B2339006C20AE /* MainView.xib */,
 				D74993A0217B2762006C20AE /* EventCell.xib */,
 			);
 			path = xib;
@@ -386,7 +386,7 @@
 				D74993A2217B2762006C20AE /* EventCell.xib in Resources */,
 				D7499371217B1F01006C20AE /* LaunchScreen.storyboard in Resources */,
 				D749936E217B1F01006C20AE /* Assets.xcassets in Resources */,
-				D7499397217B2339006C20AE /* MainController.xib in Resources */,
+				D7499397217B2339006C20AE /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
         
-        let controller = MainController(nibName: "MainController", bundle: nil)
+        let controller = MainController(nibName: "MainView", bundle: nil)
         nav1.viewControllers = [controller]
         
         window = UIWindow(frame: UIScreen.main.bounds)
