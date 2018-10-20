@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class EventPresenter{
+    func getEvents(view:EventView, service: EventService){
+        view.startLoading()
+        service.getEvents { (events) in
+            view.stopLoading()
+            if events.count <= 0 {
+                view.setEmptyEvents()
+            } else {
+                view.getEvent(event: events)
+            }
+        }
+    }
+}
