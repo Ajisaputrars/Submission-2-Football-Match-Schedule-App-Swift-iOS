@@ -115,7 +115,7 @@ class Event{
     }
     
     init(strEvent:String, strSport:String, idLeague:String, strLeague:String,
-         trHomeTeam:String, strAwayTeam:String, intHomeScore:String, intAwayScore:String,
+         strHomeTeam:String, strAwayTeam:String, intHomeScore:String, intAwayScore:String,
          strHomeGoalDetails:String, strHomeLineupGoalkeeper:String, strHomeLineupDefense:String,
          strHomeLineupMidfield:String,strHomeLineupForward:String, strHomeLineupSubstitutes:String,
          strAwayGoalDetails:String, strAwayLineupGoalkeeper:String, strAwayLineupDefense:String,
@@ -127,25 +127,25 @@ class Event{
         self._idLeague = idLeague
         self._strLeague = strLeague
         self._strHomeTeam = strHomeTeam
-        //        self._strAwayTeam
-        //        self._intHomeScore
-        //        self._intAwayScore
-        //        self._strHomeGoalDetails
-        //        self._strHomeLineupGoalkeeper
-        //        self._strHomeLineupDefense
-        //          self._strHomeLineupMidfield
-        //          self._strHomeLineupForward
-        //          self._strHomeLineupSubstitutes
-        //          self._strAwayGoalDetails
-        //          self._strAwayLineupGoalkeeper
-        //          self._strAwayLineupDefense
-        //          self._strAwayLineupMidfield
-        //          self._strAwayLineupForward
-        //          self._strAwayLineupSubstitutes
-        //          self._dateEvent
-        //          self._strDate
-        //          self._strTime
-        //          self._idHomeTeam
-        //          self._idAwayTeam
+        self._strAwayTeam = strAwayTeam
+        self._intHomeScore = intHomeScore
+        self._intAwayScore = intAwayScore
+        self._strHomeGoalDetails = strHomeGoalDetails
+        self._strHomeLineupGoalkeeper = strHomeLineupGoalkeeper
+        self._strHomeLineupDefense = strHomeLineupDefense
+        self._strHomeLineupMidfield = strHomeLineupMidfield
+        self._strHomeLineupForward = strHomeLineupForward
+        self._strHomeLineupSubstitutes = strHomeLineupSubstitutes
+        self._strAwayGoalDetails = strAwayGoalDetails
+        self._strAwayLineupGoalkeeper = strAwayLineupGoalkeeper
+        self._strAwayLineupDefense = strAwayLineupDefense
+        self._strAwayLineupMidfield = strAwayLineupMidfield
+        self._strAwayLineupForward = strAwayLineupForward
+        self._strAwayLineupSubstitutes = strAwayLineupSubstitutes
+        self._dateEvent = dateEvent
+        self._strDate = strDate
+        self._strTime = strTime
+        self._idHomeTeam = idHomeTeam
+        self._idAwayTeam = idAwayTeam
     }
 }
