@@ -9,9 +9,9 @@
 import Foundation
 
 class EventPresenter{
-    func getEvents(view:EventView, service: EventService){
+    func getEvents(view:EventView, service: EventService, url: String){
         view.startLoading()
-        service.getEvents { (events) in
+        service.getEvents(url: url) { (events) in
             view.stopLoading()
             if events.count <= 0 {
                 view.setEmptyEvents()

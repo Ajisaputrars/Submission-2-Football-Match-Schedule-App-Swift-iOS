@@ -10,12 +10,10 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-let EventURL = "https://www.thesportsdb.com/api/v1/json/1/eventspastleague.php?id=4328"
-
 class EventService{
-    func getEvents(_ completion:@escaping ([Event]) -> Void){
+    func getEvents(url: String, _ completion:@escaping ([Event]) -> Void){
         var events = [Event]()
-        Alamofire.request(EventURL).responseJSON { (respons) in
+        Alamofire.request(url).responseJSON { (respons) in
             if respons.result.isSuccess {
                 let eventsJSON: JSON = JSON(respons.result.value)
                 for item in eventsJSON["events"].arrayValue {

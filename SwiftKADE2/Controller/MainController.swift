@@ -28,7 +28,11 @@ class MainController: UIViewController {
         mainView.eventTableView.delegate = self
         mainView.eventTableView.dataSource = self
         
-        eventPresenter.getEvents(view: self, service: EventService())
+        eventPresenter.getEvents(view: self, service: EventService(), url: LAST_EVENT_URL)
+    }
+    
+    @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
+        
     }
 }
 
@@ -42,12 +46,17 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(event: events[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 extension MainController: EventView{
     func startLoading() {
         mainView.loadingIndicator.startAnimating()
         mainView.eventTableView.isHidden = true
+        mainView.errorLabel.isHidden = true
     }
     
     func stopLoading() {
@@ -71,6 +80,5 @@ extension MainController: EventView{
 extension MainController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
