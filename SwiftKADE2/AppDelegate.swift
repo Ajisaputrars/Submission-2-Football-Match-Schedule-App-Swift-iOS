@@ -17,12 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let barColor = UIColor(red: 21/255, green: 126/255, blue: 251/255, alpha: 1)
         UIApplication.shared.statusBarStyle = .lightContent
+        
         let nav1 = UINavigationController()
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0/255, green: 165/255, blue: 255/255, alpha: 1)
+        UINavigationBar.appearance().barTintColor = barColor
+        UINavigationBar.appearance().backgroundColor = barColor
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        
         let controller = MainController(nibName: "MainController", bundle: nil)
         nav1.viewControllers = [controller]
         
