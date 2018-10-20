@@ -9,8 +9,8 @@
 import Foundation
 
 protocol EventView {
-    func startAnimating()
-    func stopAnimating()
+    func startLoading()
+    func stopLoading()
     func setEmptyEvents()
     func getEvent(event: [Event])
 }
