@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol EventView {
+    func startAnimating()
+    func stopAnimating()
+    func setEmptyEvents()
+    func getEvent(event: [Event])
+}
