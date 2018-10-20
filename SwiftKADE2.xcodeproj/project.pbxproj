@@ -11,13 +11,14 @@
 		378FE99A745B9738B94ADB9D /* Pods_SwiftKADE2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8DAA248ED9216DE8017090 /* Pods_SwiftKADE2Tests.framework */; };
 		8A6E2D5B5A1E87EF2D7B6C05 /* Pods_SwiftKADE2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FD3B3CD31BD1549A19CEC9 /* Pods_SwiftKADE2UITests.framework */; };
 		D7499364217B1F01006C20AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499363217B1F01006C20AE /* AppDelegate.swift */; };
-		D7499366217B1F01006C20AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499365217B1F01006C20AE /* ViewController.swift */; };
-		D7499369217B1F01006C20AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7499367217B1F01006C20AE /* Main.storyboard */; };
 		D749936C217B1F01006C20AE /* SwiftKADE2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D749936A217B1F01006C20AE /* SwiftKADE2.xcdatamodeld */; };
 		D749936E217B1F01006C20AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D749936D217B1F01006C20AE /* Assets.xcassets */; };
 		D7499371217B1F01006C20AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D749936F217B1F01006C20AE /* LaunchScreen.storyboard */; };
 		D749937C217B1F01006C20AE /* SwiftKADE2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749937B217B1F01006C20AE /* SwiftKADE2Tests.swift */; };
 		D7499387217B1F01006C20AE /* SwiftKADE2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499386217B1F01006C20AE /* SwiftKADE2UITests.swift */; };
+		D7499396217B2339006C20AE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499394217B2339006C20AE /* MainController.swift */; };
+		D7499397217B2339006C20AE /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7499395217B2339006C20AE /* MainController.xib */; };
+		D7499399217B2387006C20AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7499398217B2387006C20AE /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,6 @@
 		CE8DAA248ED9216DE8017090 /* Pods_SwiftKADE2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftKADE2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7499360217B1F01006C20AE /* SwiftKADE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftKADE2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7499363217B1F01006C20AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7499365217B1F01006C20AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D7499368217B1F01006C20AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D749936B217B1F01006C20AE /* SwiftKADE2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftKADE2.xcdatamodel; sourceTree = "<group>"; };
 		D749936D217B1F01006C20AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7499370217B1F01006C20AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +59,9 @@
 		D7499382217B1F01006C20AE /* SwiftKADE2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKADE2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7499386217B1F01006C20AE /* SwiftKADE2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKADE2UITests.swift; sourceTree = "<group>"; };
 		D7499388217B1F01006C20AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7499394217B2339006C20AE /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		D7499395217B2339006C20AE /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
+		D7499398217B2387006C20AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EC825557FEA8C217653B3CA6 /* Pods_SwiftKADE2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftKADE2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,8 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				D7499363217B1F01006C20AE /* AppDelegate.swift */,
-				D7499365217B1F01006C20AE /* ViewController.swift */,
-				D7499367217B1F01006C20AE /* Main.storyboard */,
+				D749939C217B23AA006C20AE /* Model */,
+				D749939B217B23A5006C20AE /* View */,
+				D749939A217B239E006C20AE /* Controller */,
 				D749936D217B1F01006C20AE /* Assets.xcassets */,
 				D749936F217B1F01006C20AE /* LaunchScreen.storyboard */,
 				D7499372217B1F01006C20AE /* Info.plist */,
@@ -156,6 +159,38 @@
 				D7499388217B1F01006C20AE /* Info.plist */,
 			);
 			path = SwiftKADE2UITests;
+			sourceTree = "<group>";
+		};
+		D749939A217B239E006C20AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7499394217B2339006C20AE /* MainController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D749939B217B23A5006C20AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D749939D217B23B6006C20AE /* xib */,
+				D7499398217B2387006C20AE /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D749939C217B23AA006C20AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D749939D217B23B6006C20AE /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				D7499395217B2339006C20AE /* MainController.xib */,
+			);
+			path = xib;
 			sourceTree = "<group>";
 		};
 		F2289CD5465CAD0C8925904A /* Frameworks */ = {
@@ -281,7 +316,7 @@
 			files = (
 				D7499371217B1F01006C20AE /* LaunchScreen.storyboard in Resources */,
 				D749936E217B1F01006C20AE /* Assets.xcassets in Resources */,
-				D7499369217B1F01006C20AE /* Main.storyboard in Resources */,
+				D7499397217B2339006C20AE /* MainController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,15 +342,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftKADE2Tests-checkManifestLockResult.txt",
 			);
@@ -329,8 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftKADE2/Pods-SwiftKADE2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -338,8 +367,6 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -355,15 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftKADE2-checkManifestLockResult.txt",
 			);
@@ -377,15 +400,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftKADE2UITests-checkManifestLockResult.txt",
 			);
@@ -401,8 +420,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7499396217B2339006C20AE /* MainController.swift in Sources */,
 				D749936C217B1F01006C20AE /* SwiftKADE2.xcdatamodeld in Sources */,
-				D7499366217B1F01006C20AE /* ViewController.swift in Sources */,
+				D7499399217B2387006C20AE /* MainView.swift in Sources */,
 				D7499364217B1F01006C20AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,14 +459,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D7499367217B1F01006C20AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7499368217B1F01006C20AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D749936F217B1F01006C20AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
