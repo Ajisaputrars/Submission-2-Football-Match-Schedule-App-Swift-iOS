@@ -22,6 +22,7 @@
 		D74993A1217B2762006C20AE /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D749939F217B2762006C20AE /* EventCell.swift */; };
 		D74993A2217B2762006C20AE /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74993A0217B2762006C20AE /* EventCell.xib */; };
 		D74993A5217B27BD006C20AE /* Constant + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74993A4217B27BD006C20AE /* Constant + Helper.swift */; };
+		D74993A7217B66E3006C20AE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74993A6217B66E3006C20AE /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D749939F217B2762006C20AE /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		D74993A0217B2762006C20AE /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		D74993A4217B27BD006C20AE /* Constant + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant + Helper.swift"; sourceTree = "<group>"; };
+		D74993A6217B66E3006C20AE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EC825557FEA8C217653B3CA6 /* Pods_SwiftKADE2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftKADE2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 		D749939C217B23AA006C20AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D74993A6217B66E3006C20AE /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				D74993A1217B2762006C20AE /* EventCell.swift in Sources */,
 				D7499399217B2387006C20AE /* MainView.swift in Sources */,
 				D7499364217B1F01006C20AE /* AppDelegate.swift in Sources */,
+				D74993A7217B66E3006C20AE /* Event.swift in Sources */,
 				D74993A5217B27BD006C20AE /* Constant + Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
