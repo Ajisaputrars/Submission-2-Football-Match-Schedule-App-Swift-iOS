@@ -12,5 +12,5 @@ protocol EventView {
     func startLoading()
     func stopLoading()
     func setEmptyEvents()
-    func getEvent(event: [Event])
+    func getEvents(events: [Event])
 }

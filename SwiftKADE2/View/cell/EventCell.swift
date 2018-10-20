@@ -26,4 +26,12 @@ class EventCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configure(event: Event){
+        dateEventLabel.text = event.dateEvent
+        homeTeamLabel.text = event.strHomeTeam
+        awayTeamLabel.text = event.strAwayTeam
+        homeTeamScoreLabel.text = event.intHomeScore
+        awayTeamScore.text = event.intAwayScore
+    }
 }

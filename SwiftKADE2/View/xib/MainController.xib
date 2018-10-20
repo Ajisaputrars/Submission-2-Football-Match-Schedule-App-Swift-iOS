@@ -31,20 +31,35 @@
                     <rect key="frame" x="16" y="61" width="343" height="606"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error fetching data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvX-1j-Zy9">
+                    <rect key="frame" x="116" y="323" width="143" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-X1-qzS">
+                    <rect key="frame" x="177" y="324" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="zvX-1j-Zy9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CB8-Aw-BiH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z61-2B-iMb" secondAttribute="trailing" constant="16" id="DAX-eT-woC"/>
+                <constraint firstItem="zvX-1j-Zy9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oit-Ap-Efu"/>
                 <constraint firstItem="On4-HB-dVd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Q3N-YB-RaW"/>
+                <constraint firstItem="kgN-X1-qzS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TuA-Ln-XeH"/>
                 <constraint firstItem="On4-HB-dVd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aZx-gy-GNB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="On4-HB-dVd" secondAttribute="trailing" constant="16" id="keZ-Oh-wPK"/>
                 <constraint firstItem="z61-2B-iMb" firstAttribute="top" secondItem="On4-HB-dVd" secondAttribute="bottom" constant="5" id="s1U-59-khK"/>
+                <constraint firstItem="kgN-X1-qzS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xWX-Bd-4nM"/>
                 <constraint firstItem="z61-2B-iMb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="yaP-Uh-9dP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="z61-2B-iMb" secondAttribute="bottom" id="zrB-Uf-o8b"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <connections>
+                <outlet property="errorLabel" destination="zvX-1j-Zy9" id="XGM-9d-R0N"/>
                 <outlet property="eventTableView" destination="z61-2B-iMb" id="d42-Jo-zbl"/>
+                <outlet property="loadingIndicator" destination="kgN-X1-qzS" id="aAn-t4-ChD"/>
             </connections>
             <point key="canvasLocation" x="39.5" y="54.5"/>
         </view>

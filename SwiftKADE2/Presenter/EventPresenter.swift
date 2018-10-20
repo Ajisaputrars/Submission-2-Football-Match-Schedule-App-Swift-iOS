@@ -16,7 +16,7 @@ class EventPresenter{
             if events.count <= 0 {
                 view.setEmptyEvents()
             } else {
-                view.getEvent(event: events)
+                view.getEvents(events: events)
             }
         }
     }

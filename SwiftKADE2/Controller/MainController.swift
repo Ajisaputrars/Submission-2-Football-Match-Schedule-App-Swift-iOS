@@ -10,6 +10,9 @@ import UIKit
 
 class MainController: UIViewController {
     
+    private var events = [Event]()
+    private var eventPresenter = EventPresenter()
+    
     private var mainView: MainView! {
         guard isViewLoaded else { return nil }
         return view as! MainView
@@ -24,17 +27,44 @@ class MainController: UIViewController {
         
         mainView.eventTableView.delegate = self
         mainView.eventTableView.dataSource = self
+        
+        eventPresenter.getEvents(view: self, service: EventService())
     }
 }
 
 extension MainController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return events.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventCell
+        cell.configure(event: events[indexPath.row])
         return cell
+    }
+}
+
+extension MainController: EventView{
+    func startLoading() {
+        mainView.loadingIndicator.startAnimating()
+        mainView.eventTableView.isHidden = true
+    }
+    
+    func stopLoading() {
+        mainView.loadingIndicator.stopAnimating()
+        mainView.loadingIndicator.isHidden = true
+    }
+    
+    func setEmptyEvents() {
+        mainView.eventTableView.isHidden = true
+        mainView.errorLabel.isHidden = false
+    }
+    
+    func getEvents(events: [Event]) {
+        mainView.eventTableView.isHidden = false
+        mainView.errorLabel.isHidden = true
+        self.events = events
+        mainView.eventTableView.reloadData()
     }
 }
 
