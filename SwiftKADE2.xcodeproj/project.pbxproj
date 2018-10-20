@@ -23,7 +23,6 @@
 		D74993A2217B2762006C20AE /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74993A0217B2762006C20AE /* EventCell.xib */; };
 		D74993A5217B27BD006C20AE /* Constant + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74993A4217B27BD006C20AE /* Constant + Helper.swift */; };
 		D74993A7217B66E3006C20AE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74993A6217B66E3006C20AE /* Event.swift */; };
-		D74993AA217B8355006C20AE /* TestProtected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74993A9217B8355006C20AE /* TestProtected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +70,6 @@
 		D74993A0217B2762006C20AE /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
 		D74993A4217B27BD006C20AE /* Constant + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constant + Helper.swift"; sourceTree = "<group>"; };
 		D74993A6217B66E3006C20AE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		D74993A9217B8355006C20AE /* TestProtected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtected.swift; sourceTree = "<group>"; };
 		EC825557FEA8C217653B3CA6 /* Pods_SwiftKADE2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftKADE2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,7 +225,6 @@
 		D74993A8217B82F3006C20AE /* Protected */ = {
 			isa = PBXGroup;
 			children = (
-				D74993A9217B8355006C20AE /* TestProtected.swift */,
 			);
 			path = Protected;
 			sourceTree = "<group>";
@@ -460,7 +457,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74993AA217B8355006C20AE /* TestProtected.swift in Sources */,
 				D7499396217B2339006C20AE /* MainController.swift in Sources */,
 				D749936C217B1F01006C20AE /* SwiftKADE2.xcdatamodeld in Sources */,
 				D74993A1217B2762006C20AE /* EventCell.swift in Sources */,
