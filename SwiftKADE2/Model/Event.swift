@@ -36,91 +36,188 @@ class Event{
     private var _idAwayTeam:String!
     
     public var strEvent:String {
-        return _strEvent
+        if let i = _strEvent {
+            return i
+        }
+        return "null"
     }
     
     public var strSport:String {
-        return _strSport
+        if let i = _strSport{
+            return i
+        }
+        return "null"
     }
     public var idLeague:String{
-        return _idLeague
+        if let i = _idLeague {
+            return i
+        }
+        return "null"
+
     }
     public var strLeague:String {
-        return _strLeague
+        if let i = _strLeague {
+            return i
+        }
+        return "null"
+
     }
     public var strHomeTeam:String{
-        return _strHomeTeam
+        if let i = _strHomeTeam {
+            return i
+        }
+        return "null"
+
     }
     public var strAwayTeam:String{
-        return _strAwayTeam
+        if let i = _strAwayTeam{
+            return i
+        }
+        return "null"
+
     }
     
     public var intHomeScore:String{
-        return _intHomeScore
+        if let i = _intHomeScore{
+            return i
+        }
+        return "null"
+
     }
     public var intAwayScore:String{
-        return _intAwayScore
+        if let i = _intAwayScore{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeGoalDetails:String{
-        return _strHomeGoalDetails
+        if let i = _strHomeGoalDetails{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeLineupGoalkeeper:String{
-        return _strHomeLineupGoalkeeper
+        if let i = _strHomeLineupGoalkeeper{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeLineupDefense:String{
-        return _strHomeLineupDefense
+        if let i = _strHomeLineupDefense{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeLineupMidfield:String{
-        return _strHomeLineupMidfield
+        if let i = _strHomeLineupMidfield{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeLineupForward:String{
-        return _strHomeLineupForward
+        if let i = _strHomeLineupForward{
+            return i
+        }
+        return "null"
+
     }
     public var strHomeLineupSubstitutes:String{
-        return _strHomeLineupSubstitutes
+        if let i = _strHomeLineupSubstitutes{
+            return i
+        }
+        return "null"
+
     }
     public var strAwayGoalDetails:String{
-        return _strAwayGoalDetails
+        if let i = _strAwayGoalDetails{
+            return i
+        }
+        return "null"
+
     }
     
     public var strAwayLineupGoalkeeper:String{
-        return _strAwayLineupGoalkeeper
+        if let i = _strAwayLineupGoalkeeper{
+            return i
+        }
+        return "null"
+
     }
     public var strAwayLineupDefense:String{
-        return _strAwayLineupDefense
+        if let i = _strAwayLineupDefense{
+            return i
+        }
+        return "null"
+
     }
     public var strAwayLineupMidfield:String{
-        return _strAwayLineupMidfield
+        if let i = _strAwayLineupMidfield{
+            return i
+        }
+        return "null"
+
     }
     public var strAwayLineupForward:String{
-        return _strAwayLineupForward
+        if let i = _strAwayLineupForward{
+            return i
+        }
+        return "null"
+
     }
     public var strAwayLineupSubstitutes:String{
-        return _strAwayLineupSubstitutes
+        if let i = _strAwayLineupSubstitutes{
+            return i
+        }
+        return "null"
+
     }
     public var dateEvent:String{
-        return _dateEvent
+        if let i = _dateEvent{
+            return i
+        }
+        return "null"
+
     }
     public var strDate:String{
-        return _strDate
+        if let i = _strDate{
+            return i
+        }
+        return "null"
+
     }
     public var strTime:String{
-        return _strTime
+        if let i = _strTime{
+            return i
+        }
+        return "null"
+
     }
     public var idHomeTeam:String{
-        return _idHomeTeam
+        if let i = _idHomeTeam{
+            return i
+        }
+        return "null"
+
     }
     public var idAwayTeam:String{
-        return _idAwayTeam
+        if let i = _idAwayTeam{
+            return i
+        }
+        return "null"
     }
     
-    init(strEvent:String, strSport:String, idLeague:String, strLeague:String,
-         strHomeTeam:String, strAwayTeam:String, intHomeScore:String, intAwayScore:String,
-         strHomeGoalDetails:String, strHomeLineupGoalkeeper:String, strHomeLineupDefense:String,
-         strHomeLineupMidfield:String,strHomeLineupForward:String, strHomeLineupSubstitutes:String,
-         strAwayGoalDetails:String, strAwayLineupGoalkeeper:String, strAwayLineupDefense:String,
-         strAwayLineupMidfield:String, strAwayLineupForward:String, strAwayLineupSubstitutes:String,
-         dateEvent:String, strDate:String, strTime:String, idHomeTeam:String, idAwayTeam:String ) {
+    init(strEvent:String?, strSport:String?, idLeague:String?, strLeague:String?,
+         strHomeTeam:String?, strAwayTeam:String?, intHomeScore:String?, intAwayScore:String?,
+         strHomeGoalDetails:String?, strHomeLineupGoalkeeper:String?, strHomeLineupDefense:String?,
+         strHomeLineupMidfield:String?,strHomeLineupForward:String?, strHomeLineupSubstitutes:String?,
+         strAwayGoalDetails:String?, strAwayLineupGoalkeeper:String?, strAwayLineupDefense:String?,
+         strAwayLineupMidfield:String?, strAwayLineupForward:String?, strAwayLineupSubstitutes:String?,
+         dateEvent:String?, strDate:String?, strTime:String?, idHomeTeam:String?, idAwayTeam:String? ) {
         
         self._strEvent = strEvent
         self._strSport = strSport
