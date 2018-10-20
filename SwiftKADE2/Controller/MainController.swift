@@ -9,13 +9,35 @@
 import UIKit
 
 class MainController: UIViewController {
+    
+    private var mainView: MainView! {
+        guard isViewLoaded else { return nil }
+        return view as! MainView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Football Match Schedule"
+        
+        let nib = UINib(nibName: "EventCell", bundle: nil)
+        mainView.eventTableView.register(nib, forCellReuseIdentifier: "eventCell")
+        
+        mainView.eventTableView.delegate = self
+        mainView.eventTableView.dataSource = self
     }
 }
+
+extension MainController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell") as! EventCell
+        return cell
+    }
+}
+
 extension MainController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
