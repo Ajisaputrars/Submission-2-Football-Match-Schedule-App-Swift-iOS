@@ -49,22 +49,22 @@ class DetailView: UIView {
         self.awayScoreLabel.text = event.intAwayScore
         self.awayTeamLabel.text = event.strAwayTeam
         
-        self.homeGoalScorerLabel.text = event.strHomeGoalDetails
-        self.awayGoalScorerLabel.text = event.strAwayGoalDetails
+        self.homeGoalScorerLabel.text = event.strHomeGoalDetails.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awayGoalScorerLabel.text = event.strAwayGoalDetails.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         
-        self.homeGoalKeeperLabel.text = event.strHomeLineupGoalkeeper
-        self.awayGoalKeeperLabel.text = event.strAwayLineupGoalkeeper
+        self.homeGoalKeeperLabel.text = event.strHomeLineupGoalkeeper.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awayGoalKeeperLabel.text = event.strAwayLineupGoalkeeper.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         
-        self.homeDefenseLabel.text = event.strHomeLineupDefense
-        self.awayDefenseLabel.text = event.strAwayLineupDefense
+        self.homeDefenseLabel.text = event.strHomeLineupDefense.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awayDefenseLabel.text = event.strAwayLineupDefense.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         
-        self.homeMidFielderLabel.text = event.strHomeLineupMidfield
-        self.awayMidFielderLabel.text = event.strAwayLineupMidfield
+        self.homeMidFielderLabel.text = event.strHomeLineupMidfield.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awayMidFielderLabel.text = event.strAwayLineupMidfield.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         
-        self.homeForwardLabel.text = event.strHomeLineupForward
-        self.awayForwardLabel.text = event.strAwayLineupForward
+        self.homeForwardLabel.text = event.strHomeLineupForward.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awayForwardLabel.text = event.strAwayLineupForward.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         
-        self.homeSubstitutesLabel.text = event.strHomeLineupSubstitutes
-        self.awaySubstitutesLabel.text = event.strAwayLineupSubstitutes
+        self.homeSubstitutesLabel.text = event.strHomeLineupSubstitutes.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.awaySubstitutesLabel.text = event.strAwayLineupSubstitutes.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
     }
 }
