@@ -49,8 +49,8 @@ class DetailView: UIView {
         self.awayScoreLabel.text = event.intAwayScore
         self.awayTeamLabel.text = event.strAwayTeam
         
-        self.homeGoalScorerLabel.text = event.strHomeGoalDetails.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
-        self.awayGoalScorerLabel.text = event.strAwayGoalDetails.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+        self.homeGoalScorerLabel.text = event.strHomeGoalDetails.replacingOccurrences(of: ";", with: "\n", options: .literal, range: nil)
+        self.awayGoalScorerLabel.text = event.strAwayGoalDetails.replacingOccurrences(of: ";", with: "\n", options: .literal, range: nil)
         
         self.homeGoalKeeperLabel.text = event.strHomeLineupGoalkeeper.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         self.awayGoalKeeperLabel.text = event.strAwayLineupGoalkeeper.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)

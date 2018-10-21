@@ -25,27 +25,6 @@ class DetailController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        printData()
-    }
-    
-    func printData(){
-        var homeMid = event.strHomeLineupMidfield
-        var awayMid = event.strAwayLineupMidfield
-        
-        if homeMid == "" {
-            homeMid = "Kosong"
-        } else if homeMid == nil {
-            homeMid = "nil"
-        }
-        
-        if awayMid == "" {
-            awayMid = "Kosong"
-        } else if awayMid == nil {
-            awayMid = "nil"
-        }
-        
-        print("HOME EVENT MIDFIELDFER: \(homeMid)")
-        print("AWAY EVENT MIDFIELDFER: \(awayMid)")
     }
     
     func setGoalLabelConstraint(){
@@ -60,6 +39,5 @@ class DetailController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
