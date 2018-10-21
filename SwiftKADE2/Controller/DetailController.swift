@@ -25,6 +25,7 @@ class DetailController: UIViewController {
         super.viewDidLoad()
         detailView.configure(event: event)
         setGoalLabelConstraint()
+        self.title = "Detail Match"
     }
     
     override func viewDidAppear(_ animated: Bool) {

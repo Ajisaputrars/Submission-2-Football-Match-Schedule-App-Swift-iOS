@@ -28,6 +28,8 @@ class MainController: UIViewController {
         mainView.eventTableView.delegate = self
         mainView.eventTableView.dataSource = self
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+
         eventPresenter.getEvents(view: self, service: EventService(), url: LAST_EVENT_URL)
     }
     
