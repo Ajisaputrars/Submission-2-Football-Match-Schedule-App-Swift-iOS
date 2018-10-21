@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailView: UIView {
     
@@ -66,5 +67,13 @@ class DetailView: UIView {
         
         self.homeSubstitutesLabel.text = event.strHomeLineupSubstitutes.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
         self.awaySubstitutesLabel.text = event.strAwayLineupSubstitutes.replacingOccurrences(of: "; ", with: "\n", options: .literal, range: nil)
+    }
+    
+    func configureHomeBadge(url: String){
+        self.homeImageView.kf.setImage(with: URL(string: url))
+    }
+    
+    func configureAwayBadge(url: String){
+        self.awayImageView.kf.setImage(with: URL(string: url))
     }
 }

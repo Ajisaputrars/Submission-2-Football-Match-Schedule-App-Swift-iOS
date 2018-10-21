@@ -65,6 +65,7 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
 
 extension MainController: EventView{
     func startLoading() {
+        mainView.loadingIndicator.isHidden = false
         mainView.loadingIndicator.startAnimating()
         mainView.eventTableView.isHidden = true
         mainView.errorLabel.isHidden = true
