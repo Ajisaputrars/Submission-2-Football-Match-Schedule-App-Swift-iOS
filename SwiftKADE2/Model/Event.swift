@@ -37,6 +37,9 @@ class Event{
     
     public var strEvent:String {
         if let i = _strEvent {
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -44,12 +47,18 @@ class Event{
     
     public var strSport:String {
         if let i = _strSport{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
     }
     public var idLeague:String{
         if let i = _idLeague {
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -57,6 +66,9 @@ class Event{
     }
     public var strLeague:String {
         if let i = _strLeague {
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -64,6 +76,9 @@ class Event{
     }
     public var strHomeTeam:String{
         if let i = _strHomeTeam {
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -71,6 +86,9 @@ class Event{
     }
     public var strAwayTeam:String{
         if let i = _strAwayTeam{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -79,6 +97,9 @@ class Event{
     
     public var intHomeScore:String{
         if let i = _intHomeScore{
+            if i == "" {
+                return ""
+            }
             return i
         }
         return "null"
@@ -86,6 +107,9 @@ class Event{
     }
     public var intAwayScore:String{
         if let i = _intAwayScore{
+            if i == "" {
+                return ""
+            }
             return i
         }
         return "null"
@@ -93,6 +117,9 @@ class Event{
     }
     public var strHomeGoalDetails:String{
         if let i = _strHomeGoalDetails{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -100,6 +127,9 @@ class Event{
     }
     public var strHomeLineupGoalkeeper:String{
         if let i = _strHomeLineupGoalkeeper{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -107,6 +137,9 @@ class Event{
     }
     public var strHomeLineupDefense:String{
         if let i = _strHomeLineupDefense{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -114,6 +147,9 @@ class Event{
     }
     public var strHomeLineupMidfield:String{
         if let i = _strHomeLineupMidfield{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -121,6 +157,9 @@ class Event{
     }
     public var strHomeLineupForward:String{
         if let i = _strHomeLineupForward{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -128,6 +167,9 @@ class Event{
     }
     public var strHomeLineupSubstitutes:String{
         if let i = _strHomeLineupSubstitutes{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -135,6 +177,9 @@ class Event{
     }
     public var strAwayGoalDetails:String{
         if let i = _strAwayGoalDetails{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -143,6 +188,9 @@ class Event{
     
     public var strAwayLineupGoalkeeper:String{
         if let i = _strAwayLineupGoalkeeper{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -150,6 +198,9 @@ class Event{
     }
     public var strAwayLineupDefense:String{
         if let i = _strAwayLineupDefense{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -157,6 +208,9 @@ class Event{
     }
     public var strAwayLineupMidfield:String{
         if let i = _strAwayLineupMidfield{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -164,6 +218,9 @@ class Event{
     }
     public var strAwayLineupForward:String{
         if let i = _strAwayLineupForward{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -171,6 +228,9 @@ class Event{
     }
     public var strAwayLineupSubstitutes:String{
         if let i = _strAwayLineupSubstitutes{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -178,6 +238,9 @@ class Event{
     }
     public var dateEvent:String{
         if let i = _dateEvent{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -185,6 +248,9 @@ class Event{
     }
     public var strDate:String{
         if let i = _strDate{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -192,6 +258,9 @@ class Event{
     }
     public var strTime:String{
         if let i = _strTime{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -199,6 +268,9 @@ class Event{
     }
     public var idHomeTeam:String{
         if let i = _idHomeTeam{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
@@ -206,6 +278,9 @@ class Event{
     }
     public var idAwayTeam:String{
         if let i = _idAwayTeam{
+            if i == "" {
+                return "null"
+            }
             return i
         }
         return "null"
