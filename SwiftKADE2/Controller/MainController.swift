@@ -57,6 +57,7 @@ extension MainController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = DetailController(nibName: "DetailView", bundle: nil)
+        controller.event = self.events[indexPath.row]
         navigationController?.pushViewController(controller, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }

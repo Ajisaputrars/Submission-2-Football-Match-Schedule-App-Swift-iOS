@@ -10,6 +10,8 @@ import UIKit
 
 class DetailController: UIViewController {
     
+    var event: Event!
+    
     private var detailView: DetailView! {
         guard isViewLoaded else { return nil }
         return view as! DetailView
@@ -17,7 +19,7 @@ class DetailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        detailView.configure(event: event)
         setGoalLabelConstraint()
     }
     
