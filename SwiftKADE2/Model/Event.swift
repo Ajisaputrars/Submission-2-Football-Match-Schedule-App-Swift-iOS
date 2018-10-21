@@ -118,7 +118,7 @@ class Event{
     public var strHomeGoalDetails:String{
         if let i = _strHomeGoalDetails{
             if i == "" {
-                return ""
+                return "-"
             }
             return i
         }
@@ -178,7 +178,7 @@ class Event{
     public var strAwayGoalDetails:String{
         if let i = _strAwayGoalDetails{
             if i == "" {
-                return ""
+                return "-"
             }
             return i
         }
